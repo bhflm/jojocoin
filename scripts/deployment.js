@@ -15,7 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const Jojo = await hre.ethers.getContractFactory("Jojo");
-  const jojo = await Jojo.deploy();
+  const jojo = await Jojo.deploy(100);
 
   await jojo.deployed();
 
